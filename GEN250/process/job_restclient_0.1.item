@@ -101,7 +101,7 @@
     <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
     <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
   </parameters>
-  <node componentName="tLoop" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="200" posY="160">
+  <node componentName="tLoop" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="120" posY="120">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLoop_1" show="false"/>
     <elementParameter field="RADIO" name="FORLOOP" value="true"/>
     <elementParameter field="RADIO" name="WHILELOOP" value="false"/>
@@ -114,7 +114,7 @@
     <elementParameter field="TEXT" name="ITERATION" value="i++" show="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
-  <node componentName="tFixedFlowInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="400" posY="160">
+  <node componentName="tFixedFlowInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="320" posY="120">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFixedFlowInput_1" show="false"/>
     <elementParameter field="TEXT" name="NB_ROWS" value="1"/>
     <elementParameter field="RADIO" name="USE_SINGLEMODE" value="false"/>
@@ -135,7 +135,7 @@
       <column comment="" key="false" length="-1" name="city" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="600" posY="160">
+  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="520" posY="120">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJavaRow_1" show="false"/>
     <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="System.out.println(&quot;Calling URL: http://api.weatherapi.com/v1/current.json?key=304a0884fd7f4407bfe73822252006&amp;q=&quot; + input_row.city);&#xD;&#xA;"/>
     <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
@@ -385,7 +385,7 @@
       <column defaultValue="" key="false" length="1024" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tRESTClient" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="360" posY="320">
+  <node componentName="tRESTClient" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="80" posY="280">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRESTClient_2" show="false"/>
     <elementParameter field="TEXT" name="URL" value="&quot;http://api.weatherapi.com/v1&quot;"/>
     <elementParameter field="TEXT" name="PATH" value="&quot;/current.json&quot;"/>
@@ -450,7 +450,7 @@
       <column defaultValue="" key="false" length="1024" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="520" posY="320">
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="240" posY="280">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_2" show="false"/>
     <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="CHECK" name="DUMMY" value="true" show="false"/>
@@ -482,17 +482,8 @@
       <column key="false" length="4048" name="string" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tExtractJSONFields" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="720" posY="320">
+  <node componentName="tExtractJSONFields" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="440" posY="280">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tExtractJSONFields_1" show="false"/>
-    <elementParameter field="TEXT" name="COMPONENT_NAME" value="tExtractJSONFields" show="false"/>
-    <elementParameter field="TEXT" name="VERSION" value="0.102 (ALPHA)" show="false"/>
-    <elementParameter field="TEXT" name="FAMILY" value="Processing/Fields" show="false"/>
-    <elementParameter field="CHECK" name="STARTABLE" value="false" show="false"/>
-    <elementParameter field="CHECK" name="SUBTREE_START" value="false" show="false"/>
-    <elementParameter field="CHECK" name="END_OF_FLOW" value="false" show="false"/>
-    <elementParameter field="TEXT" name="HELP" value="org.talend.help.tExtractJSONFields" show="false"/>
-    <elementParameter field="DIRECTORY" name="IREPORT_PATH" value="" show="false"/>
-    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\Program Files (x86)\Talend-Studio\studio\configuration\lib\java" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_PNInYE3PEfCMKN9zNA7WDQ" show="false"/>
     <elementParameter field="CLOSED_LIST" name="READ_BY" value="JSONPATH"/>
@@ -815,7 +806,7 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="-50" offsetLabelY="-40" posX="1080" posY="320">
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="-50" offsetLabelY="-40" posX="800" posY="280">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_1" show="false"/>
     <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
     <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
@@ -947,7 +938,7 @@
       <column comment="" key="false" length="4" name="gust_kph" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" type="id_Float" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tSleep" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="280" posY="480">
+  <node componentName="tSleep" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="440" posY="440">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSleep_1" show="false"/>
     <elementParameter field="TEXT" name="PAUSE" value="10"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
