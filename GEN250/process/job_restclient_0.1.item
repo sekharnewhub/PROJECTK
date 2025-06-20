@@ -1,0 +1,1070 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
+  <context confirmationNeeded="false" hide="false" name="Default">
+    <contextParameter comment="&quot;Hyderabad&quot;" name="city" prompt="city?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_BrJYIE3GEfCMKN9zNA7WDQ"/>
+  </context>
+  <parameters>
+    <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="OVERRIDE_ENCODING_FLAG" value="false" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="OVERRIDE_ENCODING_IN_EXTRA" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="OVERRIDE_ENCODING_IN_EXTRA:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:WkICHYAVfXaUEFv2R37CNRDA7J7DcZfKTHjtlCuO" show="false"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false" show="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;C:/Program Files (x86)/Talend-Studio/studio/workspace/.metadata&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" value="JDBCOutput" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_18" show="false"/>
+    <elementParameter field="TEXT" name="URL" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:IIe8uMbScbSTMizvDqUtosqeMNqtsbIS6qKvr3+X" show="false"/>
+    <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
+  </parameters>
+  <node componentName="tLoop" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="200" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLoop_1" show="false"/>
+    <elementParameter field="RADIO" name="FORLOOP" value="true"/>
+    <elementParameter field="RADIO" name="WHILELOOP" value="false"/>
+    <elementParameter field="TEXT" name="FROM" value="1"/>
+    <elementParameter field="TEXT" name="TO" value="100"/>
+    <elementParameter field="TEXT" name="STEP" value="1"/>
+    <elementParameter field="CHECK" name="INCREASE" value="true"/>
+    <elementParameter field="TEXT" name="DECLARATION" value="int i=0" show="false"/>
+    <elementParameter field="TEXT" name="CONDITION" value="i&lt;10" show="false"/>
+    <elementParameter field="TEXT" name="ITERATION" value="i++" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tFixedFlowInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="400" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFixedFlowInput_1" show="false"/>
+    <elementParameter field="TEXT" name="NB_ROWS" value="1"/>
+    <elementParameter field="RADIO" name="USE_SINGLEMODE" value="false"/>
+    <elementParameter field="TABLE" name="VALUES" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="city" id="0"/>
+      <elementValue elementRef="VALUE" value="&quot;Hyderabad&quot;" id="1"/>
+    </elementParameter>
+    <elementParameter field="RADIO" name="USE_INTABLE" value="true"/>
+    <elementParameter field="TABLE" name="INTABLE">
+      <elementValue elementRef="city" value="&quot;Hyderabad&quot;" id="0"/>
+    </elementParameter>
+    <elementParameter field="RADIO" name="USE_INLINECONTENT" value="false"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;" show="false"/>
+    <elementParameter field="MEMO" name="INLINECONTENT" value="" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFixedFlowInput_1">
+      <column comment="" key="false" length="-1" name="city" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="600" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJavaRow_1" show="false"/>
+    <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="System.out.println(&quot;Calling URL: http://api.weatherapi.com/v1/current.json?key=304a0884fd7f4407bfe73822252006&amp;q=&quot; + input_row.city);&#xD;&#xA;"/>
+    <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJavaRow_1"/>
+  </node>
+  <node componentName="tExtractJSONFields" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1440" posY="320">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tExtractJSONFields_2" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="READ_BY" value="JSONPATH"/>
+    <elementParameter field="CLOSED_LIST" name="JSON_PATH_VERSION" value="2_1_0"/>
+    <elementParameter field="PREV_COLUMN_LIST" name="JSONFIELD" value=""/>
+    <elementParameter field="TEXT" name="LOOP_QUERY" value="&quot;/bills/bill/line&quot;" show="false"/>
+    <elementParameter field="TEXT" name="JSON_LOOP_QUERY" value="&quot;$.bills.bill.line[*]&quot;"/>
+    <elementParameter field="TABLE" name="MAPPING" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="city" id="0"/>
+      <elementValue elementRef="QUERY" value="" id="1"/>
+      <elementValue elementRef="NODECHECK" value="false" id="2"/>
+      <elementValue elementRef="ISARRAY" value="false" id="3"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="region" id="4"/>
+      <elementValue elementRef="QUERY" value="" id="5"/>
+      <elementValue elementRef="NODECHECK" value="false" id="6"/>
+      <elementValue elementRef="ISARRAY" value="false" id="7"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="country" id="8"/>
+      <elementValue elementRef="QUERY" value="" id="9"/>
+      <elementValue elementRef="NODECHECK" value="false" id="10"/>
+      <elementValue elementRef="ISARRAY" value="false" id="11"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="localtime" id="12"/>
+      <elementValue elementRef="QUERY" value="" id="13"/>
+      <elementValue elementRef="NODECHECK" value="false" id="14"/>
+      <elementValue elementRef="ISARRAY" value="false" id="15"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="longitude" id="16"/>
+      <elementValue elementRef="QUERY" value="" id="17"/>
+      <elementValue elementRef="NODECHECK" value="false" id="18"/>
+      <elementValue elementRef="ISARRAY" value="false" id="19"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="latitude" id="20"/>
+      <elementValue elementRef="QUERY" value="" id="21"/>
+      <elementValue elementRef="NODECHECK" value="false" id="22"/>
+      <elementValue elementRef="ISARRAY" value="false" id="23"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="temperature_c" id="24"/>
+      <elementValue elementRef="QUERY" value="" id="25"/>
+      <elementValue elementRef="NODECHECK" value="false" id="26"/>
+      <elementValue elementRef="ISARRAY" value="false" id="27"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="humidity" id="28"/>
+      <elementValue elementRef="QUERY" value="" id="29"/>
+      <elementValue elementRef="NODECHECK" value="false" id="30"/>
+      <elementValue elementRef="ISARRAY" value="false" id="31"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="condition_text" id="32"/>
+      <elementValue elementRef="QUERY" value="" id="33"/>
+      <elementValue elementRef="NODECHECK" value="false" id="34"/>
+      <elementValue elementRef="ISARRAY" value="false" id="35"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="wind_kph" id="36"/>
+      <elementValue elementRef="QUERY" value="" id="37"/>
+      <elementValue elementRef="NODECHECK" value="false" id="38"/>
+      <elementValue elementRef="ISARRAY" value="false" id="39"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="wind_dir" id="40"/>
+      <elementValue elementRef="QUERY" value="" id="41"/>
+      <elementValue elementRef="NODECHECK" value="false" id="42"/>
+      <elementValue elementRef="ISARRAY" value="false" id="43"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="pressure_mb" id="44"/>
+      <elementValue elementRef="QUERY" value="" id="45"/>
+      <elementValue elementRef="NODECHECK" value="false" id="46"/>
+      <elementValue elementRef="ISARRAY" value="false" id="47"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="cloud" id="48"/>
+      <elementValue elementRef="QUERY" value="" id="49"/>
+      <elementValue elementRef="NODECHECK" value="false" id="50"/>
+      <elementValue elementRef="ISARRAY" value="false" id="51"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="feelslike_c" id="52"/>
+      <elementValue elementRef="QUERY" value="" id="53"/>
+      <elementValue elementRef="NODECHECK" value="false" id="54"/>
+      <elementValue elementRef="ISARRAY" value="false" id="55"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="dewpoint_c" id="56"/>
+      <elementValue elementRef="QUERY" value="" id="57"/>
+      <elementValue elementRef="NODECHECK" value="false" id="58"/>
+      <elementValue elementRef="ISARRAY" value="false" id="59"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="visibility_km" id="60"/>
+      <elementValue elementRef="QUERY" value="" id="61"/>
+      <elementValue elementRef="NODECHECK" value="false" id="62"/>
+      <elementValue elementRef="ISARRAY" value="false" id="63"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="uv_index" id="64"/>
+      <elementValue elementRef="QUERY" value="" id="65"/>
+      <elementValue elementRef="NODECHECK" value="false" id="66"/>
+      <elementValue elementRef="ISARRAY" value="false" id="67"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="gust_kph" id="68"/>
+      <elementValue elementRef="QUERY" value="" id="69"/>
+      <elementValue elementRef="NODECHECK" value="false" id="70"/>
+      <elementValue elementRef="ISARRAY" value="false" id="71"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="last_updated" id="72"/>
+      <elementValue elementRef="QUERY" value="" id="73"/>
+      <elementValue elementRef="NODECHECK" value="false" id="74"/>
+      <elementValue elementRef="ISARRAY" value="false" id="75"/>
+    </elementParameter>
+    <elementParameter field="TABLE" name="MAPPING_4_JSONPATH">
+      <elementValue elementRef="SCHEMA_COLUMN" value="city" id="0"/>
+      <elementValue elementRef="QUERY" value="" id="1"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="region" id="2"/>
+      <elementValue elementRef="QUERY" value="" id="3"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="country" id="4"/>
+      <elementValue elementRef="QUERY" value="" id="5"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="localtime" id="6"/>
+      <elementValue elementRef="QUERY" value="" id="7"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="longitude" id="8"/>
+      <elementValue elementRef="QUERY" value="" id="9"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="latitude" id="10"/>
+      <elementValue elementRef="QUERY" value="" id="11"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="temperature_c" id="12"/>
+      <elementValue elementRef="QUERY" value="" id="13"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="humidity" id="14"/>
+      <elementValue elementRef="QUERY" value="" id="15"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="condition_text" id="16"/>
+      <elementValue elementRef="QUERY" value="" id="17"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="wind_kph" id="18"/>
+      <elementValue elementRef="QUERY" value="" id="19"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="wind_dir" id="20"/>
+      <elementValue elementRef="QUERY" value="" id="21"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="pressure_mb" id="22"/>
+      <elementValue elementRef="QUERY" value="" id="23"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="cloud" id="24"/>
+      <elementValue elementRef="QUERY" value="" id="25"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="feelslike_c" id="26"/>
+      <elementValue elementRef="QUERY" value="" id="27"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="dewpoint_c" id="28"/>
+      <elementValue elementRef="QUERY" value="" id="29"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="visibility_km" id="30"/>
+      <elementValue elementRef="QUERY" value="" id="31"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="uv_index" id="32"/>
+      <elementValue elementRef="QUERY" value="" id="33"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="gust_kph" id="34"/>
+      <elementValue elementRef="QUERY" value="" id="35"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="last_updated" id="36"/>
+      <elementValue elementRef="QUERY" value="" id="37"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;UTF-8&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="UTF-8" show="false"/>
+    <elementParameter field="CHECK" name="USE_LOOP_AS_ROOT" value="true"/>
+    <elementParameter field="CHECK" name="SPLIT_LIST" value="true" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tExtractJSONFields_2">
+      <column comment="" key="false" length="-1" name="city" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="region" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="country" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="localtime" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="longitude" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="latitude" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="temperature_c" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="humidity" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="condition_text" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="wind_kph" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="wind_dir" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="pressure_mb" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="cloud" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="feelslike_c" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="dewpoint_c" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="visibility_km" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="uv_index" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="gust_kph" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="last_updated" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" name="REJECT">
+      <column comment="" key="false" length="-1" name="city" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="region" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="country" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="localtime" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="longitude" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="latitude" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="temperature_c" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="humidity" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="condition_text" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="wind_kph" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="wind_dir" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="pressure_mb" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="cloud" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="feelslike_c" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="dewpoint_c" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="visibility_km" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="uv_index" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="gust_kph" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="last_updated" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorJSONField" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tRESTClient" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1480" posY="200">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRESTClient_1" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="TEXT" name="URL" value="&quot;http://api.weatherapi.com/v1&quot;"/>
+    <elementParameter field="TEXT" name="PATH" value="&quot;/current.json&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="METHOD" value="GET"/>
+    <elementParameter field="CLOSED_LIST" name="CONTENT_TYPE" value="application/xml" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="ACCEPT_TYPE" value="application/json"/>
+    <elementParameter field="TABLE" name="QUERY">
+      <elementValue elementRef="NAME" value="&quot;key&quot;" id="0"/>
+      <elementValue elementRef="VALUE" value="&quot;304a0884fd7f4407bfe73822252006&quot;" id="1"/>
+      <elementValue elementRef="NAME" value="&quot;city&quot;" id="2"/>
+      <elementValue elementRef="VALUE" value="&quot;Hyderabad&quot;" id="3"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="SERVICE_LOCATOR" value="false"/>
+    <elementParameter field="TEXT" name="SERVICE_NAMESPACE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SERVICE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="SERVICE_ACTIVITY_MONITOR" value="false"/>
+    <elementParameter field="CHECK" name="NEED_AUTH" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="AUTH_TYPE" value="BASIC" show="false"/>
+    <elementParameter field="TEXT" name="AUTH_USERNAME" value="&quot;username&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="AUTH_PASSWORD" value="enc:system.encryption.key.v1:5xCX7MjuLcOoeA1K33BOM10D/Tfjz010PKd0EuOrejLNrXfgd/8=" show="false"/>
+    <elementParameter field="TEXT" name="AUTH_BEARER_TOKEN" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="NEED_AUTHORIZATION" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROLE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="USE_BUSINESS_CORRELATION" value="false"/>
+    <elementParameter field="TEXT" name="CORRELATION_VALUE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CHECK_SERVER_IDENTITY" value="true"/>
+    <elementParameter field="CHECK" name="REUSE_SSL_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="LOG_MESSAGES" value="false"/>
+    <elementParameter field="CHECK" name="FOLLOW_REDIRECTS" value="false"/>
+    <elementParameter field="CHECK" name="REDIRECT_NON_SAME_HOST" value="false" show="false"/>
+    <elementParameter field="CHECK" name="MAINTAIN_SESSION" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_WEBCLIENT_OPERATION_REPORTING" value="true"/>
+    <elementParameter field="CHECK" name="CONVERT_RESPONSE_TO_DOM" value="true"/>
+    <elementParameter field="CHECK" name="UNWRAP_JSON_REQUEST" value="false" show="false"/>
+    <elementParameter field="CHECK" name="WRAP_JSON_RESPONSE" value="true"/>
+    <elementParameter field="CHECK" name="CONVERT_TYPES_TO_STRINGS" value="false"/>
+    <elementParameter field="TABLE" name="HEADERS"/>
+    <elementParameter field="TABLE" name="SERVICE_LOCATOR_CUSTOM_PROPERTIES" show="false"/>
+    <elementParameter field="TABLE" name="SERVICE_ACTIVITY_MONITOR_CUSTOM_PROPERTIES" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_CHUNKED_ENCODING" value="false" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_TIMEOUT" value="30"/>
+    <elementParameter field="TEXT" name="RECEIVE_TIMEOUT" value="60"/>
+    <elementParameter field="LABEL" name="RECEIVE_TIMEOUT_DESC" value="(See tRESTClient doc. to configure timeouts for Talend Runtime)"/>
+    <elementParameter field="CHECK" name="USE_PROXY" value="false"/>
+    <elementParameter field="TEXT" name="PROXY_HOST" value="&quot;127.0.0.1&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROXY_PORT" value="8080" show="false"/>
+    <elementParameter field="TEXT" name="PROXY_USERNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" value="enc:system.encryption.key.v1:79p0s3Gwl1Ybl7mrk+6MuONqDkz7gGAJMuGkmwvh" show="false"/>
+    <elementParameter field="TEXT" name="ARRAY_KEYS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRESTClient_1">
+      <column comment="" key="false" length="-1" name="city" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="RESPONSE" name="RESPONSE">
+      <column comment="" key="false" length="-1" name="city" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="FAULT" name="FAULT">
+      <column defaultValue="" key="false" length="0" name="errorCode" nullable="true" precision="0" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="1024" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tRESTClient" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="360" posY="320">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRESTClient_2" show="false"/>
+    <elementParameter field="TEXT" name="URL" value="&quot;http://api.weatherapi.com/v1&quot;"/>
+    <elementParameter field="TEXT" name="PATH" value="&quot;/current.json&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="METHOD" value="GET"/>
+    <elementParameter field="CLOSED_LIST" name="CONTENT_TYPE" value="application/xml" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="ACCEPT_TYPE" value="*/*"/>
+    <elementParameter field="TABLE" name="QUERY">
+      <elementValue elementRef="NAME" value="&quot;key&quot;" id="0"/>
+      <elementValue elementRef="VALUE" value="&quot;304a0884fd7f4407bfe73822252006&quot;" id="1"/>
+      <elementValue elementRef="NAME" value="&quot;q&quot;" id="2"/>
+      <elementValue elementRef="VALUE" value="&quot;Hyderabad&quot;" id="3"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="SERVICE_LOCATOR" value="false"/>
+    <elementParameter field="TEXT" name="SERVICE_NAMESPACE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SERVICE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="SERVICE_ACTIVITY_MONITOR" value="false"/>
+    <elementParameter field="CHECK" name="NEED_AUTH" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="AUTH_TYPE" value="BASIC" show="false"/>
+    <elementParameter field="TEXT" name="AUTH_USERNAME" value="&quot;username&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="AUTH_PASSWORD" value="enc:system.encryption.key.v1:NmUJGt5U7eWY9Giz6K6Ff3c9r+Cgdb1KJyk7wk4Q9eUUPD3wxPA=" show="false"/>
+    <elementParameter field="TEXT" name="AUTH_BEARER_TOKEN" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="NEED_AUTHORIZATION" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROLE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="USE_BUSINESS_CORRELATION" value="false"/>
+    <elementParameter field="TEXT" name="CORRELATION_VALUE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CHECK_SERVER_IDENTITY" value="true"/>
+    <elementParameter field="CHECK" name="REUSE_SSL_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="LOG_MESSAGES" value="false"/>
+    <elementParameter field="CHECK" name="FOLLOW_REDIRECTS" value="false"/>
+    <elementParameter field="CHECK" name="REDIRECT_NON_SAME_HOST" value="false" show="false"/>
+    <elementParameter field="CHECK" name="MAINTAIN_SESSION" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_WEBCLIENT_OPERATION_REPORTING" value="true"/>
+    <elementParameter field="CHECK" name="CONVERT_RESPONSE_TO_DOM" value="true" show="false"/>
+    <elementParameter field="CHECK" name="UNWRAP_JSON_REQUEST" value="false" show="false"/>
+    <elementParameter field="CHECK" name="WRAP_JSON_RESPONSE" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CONVERT_TYPES_TO_STRINGS" value="false"/>
+    <elementParameter field="TABLE" name="HEADERS"/>
+    <elementParameter field="TABLE" name="SERVICE_LOCATOR_CUSTOM_PROPERTIES" show="false"/>
+    <elementParameter field="TABLE" name="SERVICE_ACTIVITY_MONITOR_CUSTOM_PROPERTIES" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_CHUNKED_ENCODING" value="false" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_TIMEOUT" value="30"/>
+    <elementParameter field="TEXT" name="RECEIVE_TIMEOUT" value="60"/>
+    <elementParameter field="LABEL" name="RECEIVE_TIMEOUT_DESC" value="(See tRESTClient doc. to configure timeouts for Talend Runtime)"/>
+    <elementParameter field="CHECK" name="USE_PROXY" value="false"/>
+    <elementParameter field="TEXT" name="PROXY_HOST" value="&quot;127.0.0.1&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROXY_PORT" value="8080" show="false"/>
+    <elementParameter field="TEXT" name="PROXY_USERNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" value="enc:system.encryption.key.v1:fG4L9fS4rYfwd0+pOi5lS3p558bhw538TveKF363" show="false"/>
+    <elementParameter field="TEXT" name="ARRAY_KEYS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRESTClient_2">
+      <column comment="" key="false" length="-1" name="city" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="RESPONSE" name="RESPONSE">
+      <column defaultValue="" key="false" length="0" name="statusCode" nullable="true" precision="0" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="0" name="body" nullable="true" precision="0" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="4048" name="string" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="FAULT" name="FAULT">
+      <column defaultValue="" key="false" length="0" name="errorCode" nullable="true" precision="0" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="1024" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="520" posY="320">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_2" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="CHECK" name="DUMMY" value="true" show="false"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" value="false" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false" show="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false" show="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="statusCode" id="0"/>
+      <elementValue elementRef="LENGTH" value="10" id="1"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="body" id="2"/>
+      <elementValue elementRef="LENGTH" value="10" id="3"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="string" id="4"/>
+      <elementValue elementRef="LENGTH" value="10" id="5"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tLogRow_2">
+      <column defaultValue="" key="false" length="0" name="statusCode" nullable="true" precision="0" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="0" name="body" nullable="true" precision="0" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
+      <column key="false" length="4048" name="string" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tExtractJSONFields" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="720" posY="320">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tExtractJSONFields_1" show="false"/>
+    <elementParameter field="TEXT" name="COMPONENT_NAME" value="tExtractJSONFields" show="false"/>
+    <elementParameter field="TEXT" name="VERSION" value="0.102 (ALPHA)" show="false"/>
+    <elementParameter field="TEXT" name="FAMILY" value="Processing/Fields" show="false"/>
+    <elementParameter field="CHECK" name="STARTABLE" value="false" show="false"/>
+    <elementParameter field="CHECK" name="SUBTREE_START" value="false" show="false"/>
+    <elementParameter field="CHECK" name="END_OF_FLOW" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HELP" value="org.talend.help.tExtractJSONFields" show="false"/>
+    <elementParameter field="DIRECTORY" name="IREPORT_PATH" value="" show="false"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\Program Files (x86)\Talend-Studio\studio\configuration\lib\java" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_PNInYE3PEfCMKN9zNA7WDQ" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="READ_BY" value="JSONPATH"/>
+    <elementParameter field="CLOSED_LIST" name="JSON_PATH_VERSION" value="2_1_0"/>
+    <elementParameter field="PREV_COLUMN_LIST" name="JSONFIELD" value="string"/>
+    <elementParameter field="TEXT" name="LOOP_QUERY" value="&quot;$.location&quot;" show="false"/>
+    <elementParameter field="TEXT" name="JSON_LOOP_QUERY" value="&quot;$.location&quot;"/>
+    <elementParameter field="TABLE" name="MAPPING" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="name" id="0"/>
+      <elementValue elementRef="QUERY" value="&quot;name&quot;" id="1"/>
+      <elementValue elementRef="NODECHECK" value="" id="2"/>
+      <elementValue elementRef="ISARRAY" value="" id="3"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="region" id="4"/>
+      <elementValue elementRef="QUERY" value="&quot;region&quot;" id="5"/>
+      <elementValue elementRef="NODECHECK" value="" id="6"/>
+      <elementValue elementRef="ISARRAY" value="" id="7"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="country" id="8"/>
+      <elementValue elementRef="QUERY" value="&quot;country&quot;" id="9"/>
+      <elementValue elementRef="NODECHECK" value="" id="10"/>
+      <elementValue elementRef="ISARRAY" value="" id="11"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="lat" id="12"/>
+      <elementValue elementRef="QUERY" value="&quot;lat&quot;" id="13"/>
+      <elementValue elementRef="NODECHECK" value="" id="14"/>
+      <elementValue elementRef="ISARRAY" value="" id="15"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="lon" id="16"/>
+      <elementValue elementRef="QUERY" value="&quot;lon&quot;" id="17"/>
+      <elementValue elementRef="NODECHECK" value="" id="18"/>
+      <elementValue elementRef="ISARRAY" value="" id="19"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="tz_id" id="20"/>
+      <elementValue elementRef="QUERY" value="&quot;tz_id&quot;" id="21"/>
+      <elementValue elementRef="NODECHECK" value="" id="22"/>
+      <elementValue elementRef="ISARRAY" value="" id="23"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="localtime_epoch" id="24"/>
+      <elementValue elementRef="QUERY" value="&quot;localtime_epoch&quot;" id="25"/>
+      <elementValue elementRef="NODECHECK" value="" id="26"/>
+      <elementValue elementRef="ISARRAY" value="" id="27"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="localtime" id="28"/>
+      <elementValue elementRef="QUERY" value="&quot;localtime&quot;" id="29"/>
+      <elementValue elementRef="NODECHECK" value="" id="30"/>
+      <elementValue elementRef="ISARRAY" value="" id="31"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="last_updated_epoch" id="32"/>
+      <elementValue elementRef="QUERY" value="&quot;$.current.last_updated_epoch&quot;" id="33"/>
+      <elementValue elementRef="NODECHECK" value="" id="34"/>
+      <elementValue elementRef="ISARRAY" value="" id="35"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="last_updated" id="36"/>
+      <elementValue elementRef="QUERY" value="&quot;$.current.last_updated&quot;" id="37"/>
+      <elementValue elementRef="NODECHECK" value="" id="38"/>
+      <elementValue elementRef="ISARRAY" value="" id="39"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="temp_c" id="40"/>
+      <elementValue elementRef="QUERY" value="&quot;$.current.temp_c&quot;" id="41"/>
+      <elementValue elementRef="NODECHECK" value="" id="42"/>
+      <elementValue elementRef="ISARRAY" value="" id="43"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="temp_f" id="44"/>
+      <elementValue elementRef="QUERY" value="&quot;$.current.temp_f&quot;" id="45"/>
+      <elementValue elementRef="NODECHECK" value="" id="46"/>
+      <elementValue elementRef="ISARRAY" value="" id="47"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="is_day" id="48"/>
+      <elementValue elementRef="QUERY" value="&quot;$.current.is_day&quot;" id="49"/>
+      <elementValue elementRef="NODECHECK" value="" id="50"/>
+      <elementValue elementRef="ISARRAY" value="" id="51"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="condition" id="52"/>
+      <elementValue elementRef="QUERY" value="&quot;$.current.condition&quot;" id="53"/>
+      <elementValue elementRef="NODECHECK" value="" id="54"/>
+      <elementValue elementRef="ISARRAY" value="" id="55"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="wind_mph" id="56"/>
+      <elementValue elementRef="QUERY" value="&quot;$.current.wind_mph&quot;" id="57"/>
+      <elementValue elementRef="NODECHECK" value="" id="58"/>
+      <elementValue elementRef="ISARRAY" value="" id="59"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="wind_kph" id="60"/>
+      <elementValue elementRef="QUERY" value="&quot;$.current.wind_kph&quot;" id="61"/>
+      <elementValue elementRef="NODECHECK" value="" id="62"/>
+      <elementValue elementRef="ISARRAY" value="" id="63"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="wind_degree" id="64"/>
+      <elementValue elementRef="QUERY" value="&quot;$.current.wind_degree&quot;" id="65"/>
+      <elementValue elementRef="NODECHECK" value="" id="66"/>
+      <elementValue elementRef="ISARRAY" value="" id="67"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="wind_dir" id="68"/>
+      <elementValue elementRef="QUERY" value="&quot;$.current.wind_dir&quot;" id="69"/>
+      <elementValue elementRef="NODECHECK" value="" id="70"/>
+      <elementValue elementRef="ISARRAY" value="" id="71"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="pressure_mb" id="72"/>
+      <elementValue elementRef="QUERY" value="&quot;$.current.pressure_mb&quot;" id="73"/>
+      <elementValue elementRef="NODECHECK" value="" id="74"/>
+      <elementValue elementRef="ISARRAY" value="" id="75"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="pressure_in" id="76"/>
+      <elementValue elementRef="QUERY" value="&quot;$.current.pressure_in&quot;" id="77"/>
+      <elementValue elementRef="NODECHECK" value="" id="78"/>
+      <elementValue elementRef="ISARRAY" value="" id="79"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="precip_mm" id="80"/>
+      <elementValue elementRef="QUERY" value="&quot;$.current.precip_mm&quot;" id="81"/>
+      <elementValue elementRef="NODECHECK" value="" id="82"/>
+      <elementValue elementRef="ISARRAY" value="" id="83"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="precip_in" id="84"/>
+      <elementValue elementRef="QUERY" value="&quot;$.current.precip_in&quot;" id="85"/>
+      <elementValue elementRef="NODECHECK" value="" id="86"/>
+      <elementValue elementRef="ISARRAY" value="" id="87"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="humidity" id="88"/>
+      <elementValue elementRef="QUERY" value="&quot;$.current.humidity&quot;" id="89"/>
+      <elementValue elementRef="NODECHECK" value="" id="90"/>
+      <elementValue elementRef="ISARRAY" value="" id="91"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="cloud" id="92"/>
+      <elementValue elementRef="QUERY" value="&quot;$.current.cloud&quot;" id="93"/>
+      <elementValue elementRef="NODECHECK" value="" id="94"/>
+      <elementValue elementRef="ISARRAY" value="" id="95"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="feelslike_c" id="96"/>
+      <elementValue elementRef="QUERY" value="&quot;$.current.feelslike_c&quot;" id="97"/>
+      <elementValue elementRef="NODECHECK" value="" id="98"/>
+      <elementValue elementRef="ISARRAY" value="" id="99"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="feelslike_f" id="100"/>
+      <elementValue elementRef="QUERY" value="&quot;$.current.feelslike_f&quot;" id="101"/>
+      <elementValue elementRef="NODECHECK" value="" id="102"/>
+      <elementValue elementRef="ISARRAY" value="" id="103"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="windchill_c" id="104"/>
+      <elementValue elementRef="QUERY" value="&quot;$.current.windchill_c&quot;" id="105"/>
+      <elementValue elementRef="NODECHECK" value="" id="106"/>
+      <elementValue elementRef="ISARRAY" value="" id="107"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="windchill_f" id="108"/>
+      <elementValue elementRef="QUERY" value="&quot;$.current.windchill_f&quot;" id="109"/>
+      <elementValue elementRef="NODECHECK" value="" id="110"/>
+      <elementValue elementRef="ISARRAY" value="" id="111"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="heatindex_c" id="112"/>
+      <elementValue elementRef="QUERY" value="&quot;$.current.heatindex_c&quot;" id="113"/>
+      <elementValue elementRef="NODECHECK" value="" id="114"/>
+      <elementValue elementRef="ISARRAY" value="" id="115"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="heatindex_f" id="116"/>
+      <elementValue elementRef="QUERY" value="&quot;$.current.heatindex_f&quot;" id="117"/>
+      <elementValue elementRef="NODECHECK" value="" id="118"/>
+      <elementValue elementRef="ISARRAY" value="" id="119"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="dewpoint_c" id="120"/>
+      <elementValue elementRef="QUERY" value="&quot;$.current.dewpoint_c&quot;" id="121"/>
+      <elementValue elementRef="NODECHECK" value="" id="122"/>
+      <elementValue elementRef="ISARRAY" value="" id="123"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="dewpoint_f" id="124"/>
+      <elementValue elementRef="QUERY" value="&quot;$.current.dewpoint_f&quot;" id="125"/>
+      <elementValue elementRef="NODECHECK" value="" id="126"/>
+      <elementValue elementRef="ISARRAY" value="" id="127"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="vis_km" id="128"/>
+      <elementValue elementRef="QUERY" value="&quot;$.current.vis_km&quot;" id="129"/>
+      <elementValue elementRef="NODECHECK" value="" id="130"/>
+      <elementValue elementRef="ISARRAY" value="" id="131"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="vis_miles" id="132"/>
+      <elementValue elementRef="QUERY" value="&quot;$.current.vis_miles&quot;" id="133"/>
+      <elementValue elementRef="NODECHECK" value="" id="134"/>
+      <elementValue elementRef="ISARRAY" value="" id="135"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="uv" id="136"/>
+      <elementValue elementRef="QUERY" value="&quot;$.current.uv&quot;" id="137"/>
+      <elementValue elementRef="NODECHECK" value="" id="138"/>
+      <elementValue elementRef="ISARRAY" value="" id="139"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="gust_mph" id="140"/>
+      <elementValue elementRef="QUERY" value="&quot;$.current.gust_mph&quot;" id="141"/>
+      <elementValue elementRef="NODECHECK" value="" id="142"/>
+      <elementValue elementRef="ISARRAY" value="" id="143"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="gust_kph" id="144"/>
+      <elementValue elementRef="QUERY" value="&quot;$.current.gust_kph&quot;" id="145"/>
+      <elementValue elementRef="NODECHECK" value="" id="146"/>
+      <elementValue elementRef="ISARRAY" value="" id="147"/>
+    </elementParameter>
+    <elementParameter field="TABLE" name="MAPPING_4_JSONPATH">
+      <elementValue elementRef="SCHEMA_COLUMN" value="name" id="0"/>
+      <elementValue elementRef="QUERY" value="&quot;name&quot;" id="1"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="region" id="2"/>
+      <elementValue elementRef="QUERY" value="&quot;region&quot;" id="3"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="country" id="4"/>
+      <elementValue elementRef="QUERY" value="&quot;country&quot;" id="5"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="lat" id="6"/>
+      <elementValue elementRef="QUERY" value="&quot;lat&quot;" id="7"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="lon" id="8"/>
+      <elementValue elementRef="QUERY" value="&quot;lon&quot;" id="9"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="tz_id" id="10"/>
+      <elementValue elementRef="QUERY" value="&quot;tz_id&quot;" id="11"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="localtime_epoch" id="12"/>
+      <elementValue elementRef="QUERY" value="&quot;localtime_epoch&quot;" id="13"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="localtime" id="14"/>
+      <elementValue elementRef="QUERY" value="&quot;localtime&quot;" id="15"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="last_updated_epoch" id="16"/>
+      <elementValue elementRef="QUERY" value="&quot;$.current.last_updated_epoch&quot;" id="17"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="last_updated" id="18"/>
+      <elementValue elementRef="QUERY" value="&quot;$.current.last_updated&quot;" id="19"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="temp_c" id="20"/>
+      <elementValue elementRef="QUERY" value="&quot;$.current.temp_c&quot;" id="21"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="temp_f" id="22"/>
+      <elementValue elementRef="QUERY" value="&quot;$.current.temp_f&quot;" id="23"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="is_day" id="24"/>
+      <elementValue elementRef="QUERY" value="&quot;$.current.is_day&quot;" id="25"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="condition" id="26"/>
+      <elementValue elementRef="QUERY" value="&quot;$.current.condition&quot;" id="27"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="wind_mph" id="28"/>
+      <elementValue elementRef="QUERY" value="&quot;$.current.wind_mph&quot;" id="29"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="wind_kph" id="30"/>
+      <elementValue elementRef="QUERY" value="&quot;$.current.wind_kph&quot;" id="31"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="wind_degree" id="32"/>
+      <elementValue elementRef="QUERY" value="&quot;$.current.wind_degree&quot;" id="33"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="wind_dir" id="34"/>
+      <elementValue elementRef="QUERY" value="&quot;$.current.wind_dir&quot;" id="35"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="pressure_mb" id="36"/>
+      <elementValue elementRef="QUERY" value="&quot;$.current.pressure_mb&quot;" id="37"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="pressure_in" id="38"/>
+      <elementValue elementRef="QUERY" value="&quot;$.current.pressure_in&quot;" id="39"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="precip_mm" id="40"/>
+      <elementValue elementRef="QUERY" value="&quot;$.current.precip_mm&quot;" id="41"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="precip_in" id="42"/>
+      <elementValue elementRef="QUERY" value="&quot;$.current.precip_in&quot;" id="43"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="humidity" id="44"/>
+      <elementValue elementRef="QUERY" value="&quot;$.current.humidity&quot;" id="45"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="cloud" id="46"/>
+      <elementValue elementRef="QUERY" value="&quot;$.current.cloud&quot;" id="47"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="feelslike_c" id="48"/>
+      <elementValue elementRef="QUERY" value="&quot;$.current.feelslike_c&quot;" id="49"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="feelslike_f" id="50"/>
+      <elementValue elementRef="QUERY" value="&quot;$.current.feelslike_f&quot;" id="51"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="windchill_c" id="52"/>
+      <elementValue elementRef="QUERY" value="&quot;$.current.windchill_c&quot;" id="53"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="windchill_f" id="54"/>
+      <elementValue elementRef="QUERY" value="&quot;$.current.windchill_f&quot;" id="55"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="heatindex_c" id="56"/>
+      <elementValue elementRef="QUERY" value="&quot;$.current.heatindex_c&quot;" id="57"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="heatindex_f" id="58"/>
+      <elementValue elementRef="QUERY" value="&quot;$.current.heatindex_f&quot;" id="59"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="dewpoint_c" id="60"/>
+      <elementValue elementRef="QUERY" value="&quot;$.current.dewpoint_c&quot;" id="61"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="dewpoint_f" id="62"/>
+      <elementValue elementRef="QUERY" value="&quot;$.current.dewpoint_f&quot;" id="63"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="vis_km" id="64"/>
+      <elementValue elementRef="QUERY" value="&quot;$.current.vis_km&quot;" id="65"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="vis_miles" id="66"/>
+      <elementValue elementRef="QUERY" value="&quot;$.current.vis_miles&quot;" id="67"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="uv" id="68"/>
+      <elementValue elementRef="QUERY" value="&quot;$.current.uv&quot;" id="69"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="gust_mph" id="70"/>
+      <elementValue elementRef="QUERY" value="&quot;$.current.gust_mph&quot;" id="71"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="gust_kph" id="72"/>
+      <elementValue elementRef="QUERY" value="&quot;$.current.gust_kph&quot;" id="73"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;UTF-8&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="UTF-8" show="false"/>
+    <elementParameter field="CHECK" name="USE_LOOP_AS_ROOT" value="false"/>
+    <elementParameter field="CHECK" name="SPLIT_LIST" value="true" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="metadata" name="tExtractJSONFields_1">
+      <column comment="" key="false" length="9" name="name" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="9" name="region" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="country" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="lat" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="5" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="lon" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="5" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="tz_id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="localtime_epoch" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="16" name="localtime" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="last_updated_epoch" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="16" name="last_updated" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="temp_c" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="temp_f" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="is_day" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="84" name="condition" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="wind_mph" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="wind_kph" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="wind_degree" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="wind_dir" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Character" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="pressure_mb" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="pressure_in" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="precip_mm" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="precip_in" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="humidity" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="cloud" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="feelslike_c" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="feelslike_f" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="windchill_c" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="windchill_f" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="heatindex_c" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="heatindex_f" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="dewpoint_c" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="dewpoint_f" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="vis_km" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="vis_miles" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="uv" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="gust_mph" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="gust_kph" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" type="id_Float" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" label="metadata" name="REJECT">
+      <column comment="" key="false" length="9" name="name" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="9" name="region" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="country" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="lat" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="5" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="lon" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="5" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="tz_id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="localtime_epoch" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="16" name="localtime" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="last_updated_epoch" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="16" name="last_updated" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="temp_c" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="temp_f" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="is_day" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="84" name="condition" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="wind_mph" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="wind_kph" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="wind_degree" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="wind_dir" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Character" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="pressure_mb" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="pressure_in" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="precip_mm" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="precip_in" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="humidity" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="cloud" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="feelslike_c" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="feelslike_f" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="windchill_c" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="windchill_f" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="heatindex_c" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="heatindex_f" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="dewpoint_c" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="dewpoint_f" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="vis_km" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="vis_miles" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="uv" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="gust_mph" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="gust_kph" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" type="id_Float" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorJSONField" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="-50" offsetLabelY="-40" posX="1080" posY="320">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_1" show="false"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" value="false" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false" show="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false" show="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="name" id="0"/>
+      <elementValue elementRef="LENGTH" value="10" id="1"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="region" id="2"/>
+      <elementValue elementRef="LENGTH" value="10" id="3"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="country" id="4"/>
+      <elementValue elementRef="LENGTH" value="10" id="5"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="lat" id="6"/>
+      <elementValue elementRef="LENGTH" value="10" id="7"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="lon" id="8"/>
+      <elementValue elementRef="LENGTH" value="10" id="9"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="tz_id" id="10"/>
+      <elementValue elementRef="LENGTH" value="10" id="11"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="localtime_epoch" id="12"/>
+      <elementValue elementRef="LENGTH" value="10" id="13"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="localtime" id="14"/>
+      <elementValue elementRef="LENGTH" value="10" id="15"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="last_updated_epoch" id="16"/>
+      <elementValue elementRef="LENGTH" value="10" id="17"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="last_updated" id="18"/>
+      <elementValue elementRef="LENGTH" value="10" id="19"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="temp_c" id="20"/>
+      <elementValue elementRef="LENGTH" value="10" id="21"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="temp_f" id="22"/>
+      <elementValue elementRef="LENGTH" value="10" id="23"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="is_day" id="24"/>
+      <elementValue elementRef="LENGTH" value="10" id="25"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="condition" id="26"/>
+      <elementValue elementRef="LENGTH" value="10" id="27"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="wind_mph" id="28"/>
+      <elementValue elementRef="LENGTH" value="10" id="29"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="wind_kph" id="30"/>
+      <elementValue elementRef="LENGTH" value="10" id="31"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="wind_degree" id="32"/>
+      <elementValue elementRef="LENGTH" value="10" id="33"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="wind_dir" id="34"/>
+      <elementValue elementRef="LENGTH" value="10" id="35"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="pressure_mb" id="36"/>
+      <elementValue elementRef="LENGTH" value="10" id="37"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="pressure_in" id="38"/>
+      <elementValue elementRef="LENGTH" value="10" id="39"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="precip_mm" id="40"/>
+      <elementValue elementRef="LENGTH" value="10" id="41"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="precip_in" id="42"/>
+      <elementValue elementRef="LENGTH" value="10" id="43"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="humidity" id="44"/>
+      <elementValue elementRef="LENGTH" value="10" id="45"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="cloud" id="46"/>
+      <elementValue elementRef="LENGTH" value="10" id="47"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="feelslike_c" id="48"/>
+      <elementValue elementRef="LENGTH" value="10" id="49"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="feelslike_f" id="50"/>
+      <elementValue elementRef="LENGTH" value="10" id="51"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="windchill_c" id="52"/>
+      <elementValue elementRef="LENGTH" value="10" id="53"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="windchill_f" id="54"/>
+      <elementValue elementRef="LENGTH" value="10" id="55"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="heatindex_c" id="56"/>
+      <elementValue elementRef="LENGTH" value="10" id="57"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="heatindex_f" id="58"/>
+      <elementValue elementRef="LENGTH" value="10" id="59"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="dewpoint_c" id="60"/>
+      <elementValue elementRef="LENGTH" value="10" id="61"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="dewpoint_f" id="62"/>
+      <elementValue elementRef="LENGTH" value="10" id="63"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="vis_km" id="64"/>
+      <elementValue elementRef="LENGTH" value="10" id="65"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="vis_miles" id="66"/>
+      <elementValue elementRef="LENGTH" value="10" id="67"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="uv" id="68"/>
+      <elementValue elementRef="LENGTH" value="10" id="69"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="gust_mph" id="70"/>
+      <elementValue elementRef="LENGTH" value="10" id="71"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="gust_kph" id="72"/>
+      <elementValue elementRef="LENGTH" value="10" id="73"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="metadata" name="tLogRow_1">
+      <column comment="" key="false" length="9" name="name" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="9" name="region" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="country" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="lat" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="5" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="lon" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="5" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="tz_id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="localtime_epoch" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="16" name="localtime" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="last_updated_epoch" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="16" name="last_updated" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="temp_c" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="temp_f" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="is_day" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="84" name="condition" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="wind_mph" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="wind_kph" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="wind_degree" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="wind_dir" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Character" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="pressure_mb" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="pressure_in" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="precip_mm" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="precip_in" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="humidity" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="cloud" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="feelslike_c" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="feelslike_f" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="windchill_c" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="windchill_f" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="heatindex_c" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="heatindex_f" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="dewpoint_c" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="dewpoint_f" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="vis_km" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="vis_miles" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="uv" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="gust_mph" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="gust_kph" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" type="id_Float" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tSleep" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="480" posY="480">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSleep_1" show="false"/>
+    <elementParameter field="TEXT" name="PAUSE" value="10"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tSleep_1"/>
+  </node>
+  <connection connectorName="ITERATE" label="Iterate" lineStyle="7" metaname="tLoop_1" offsetLabelX="0" offsetLabelY="0" source="tLoop_1" target="tFixedFlowInput_1">
+    <elementParameter field="CHECK" name="ENABLE_PARALLEL" value="false"/>
+    <elementParameter field="TEXT" name="NUMBER_PARALLEL" value="2" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="iterate2" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tFixedFlowInput_1" offsetLabelX="0" offsetLabelY="0" source="tFixedFlowInput_1" target="tJavaRow_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tJavaRow_1" offsetLabelX="0" offsetLabelY="0" source="tJavaRow_1" target="tRESTClient_2">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk1" show="false"/>
+  </connection>
+  <connection connectorName="RESPONSE" label="row2" lineStyle="0" metaname="tRESTClient_2" offsetLabelX="0" offsetLabelY="0" source="tRESTClient_2" target="tLogRow_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row2" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tRESTClient_2" offsetLabelX="0" offsetLabelY="0" source="tRESTClient_2" target="tSleep_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row4" lineStyle="0" metaname="tLogRow_2" offsetLabelX="0" offsetLabelY="0" source="tLogRow_2" target="tExtractJSONFields_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row4" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row3" lineStyle="0" metaname="tExtractJSONFields_1" offsetLabelX="0" offsetLabelY="0" source="tExtractJSONFields_1" target="tLogRow_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="localtime" id="0"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="1"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="2"/>
+      <elementValue elementRef="TRACE_COLUMN" value="country" id="3"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="4"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="5"/>
+      <elementValue elementRef="TRACE_COLUMN" value="wind_kph" id="6"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="7"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="8"/>
+      <elementValue elementRef="TRACE_COLUMN" value="last_updated" id="9"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="10"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="11"/>
+      <elementValue elementRef="TRACE_COLUMN" value="city" id="12"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="13"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="14"/>
+      <elementValue elementRef="TRACE_COLUMN" value="temperature_c" id="15"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="16"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="17"/>
+      <elementValue elementRef="TRACE_COLUMN" value="humidity" id="18"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="19"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="20"/>
+      <elementValue elementRef="TRACE_COLUMN" value="region" id="21"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="22"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="23"/>
+      <elementValue elementRef="TRACE_COLUMN" value="context_text" id="24"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="25"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="26"/>
+      <elementValue elementRef="TRACE_COLUMN" value="feelslike_c" id="27"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="28"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="29"/>
+      <elementValue elementRef="TRACE_COLUMN" value="dewpoint_c" id="30"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="31"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="32"/>
+      <elementValue elementRef="TRACE_COLUMN" value="condition_text" id="33"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="34"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="35"/>
+      <elementValue elementRef="TRACE_COLUMN" value="wind_dir" id="36"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="37"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="38"/>
+      <elementValue elementRef="TRACE_COLUMN" value="gust_kph" id="39"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="40"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="41"/>
+      <elementValue elementRef="TRACE_COLUMN" value="cloud" id="42"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="43"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="44"/>
+      <elementValue elementRef="TRACE_COLUMN" value="uv_index" id="45"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="46"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="47"/>
+      <elementValue elementRef="TRACE_COLUMN" value="visibility_km" id="48"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="49"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="50"/>
+      <elementValue elementRef="TRACE_COLUMN" value="pressure_mb" id="51"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="52"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="53"/>
+      <elementValue elementRef="TRACE_COLUMN" value="longitude" id="54"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="55"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="56"/>
+      <elementValue elementRef="TRACE_COLUMN" value="latitude" id="57"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="58"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="59"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row3" show="false"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLoop_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tExtractJSONFields_2" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRESTClient_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRESTClient_2" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSleep_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+  </subjob>
+</talendfile:ProcessType>

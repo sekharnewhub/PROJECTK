@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendJSON="http://www.talend.org/json" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendJSON:JSONFileConnection xmi:id="_PNP8IE3PEfCMKN9zNA7WDQ" name="weather" dataPackage="_PNP8R03PEfCMKN9zNA7WDQ" JSONFilePath="C:/Users/Administrator/Downloads/weather.json" Encoding="UTF-8" readbyMode="JSONPATH">
+    <schema xmi:id="_PNP8IU3PEfCMKN9zNA7WDQ" LimitBoucle="50" AbsoluteXPathQuery="$.location">
+      <schemaTargets xmi:id="_PNP8Ik3PEfCMKN9zNA7WDQ" RelativeXPathQuery="name" TagName="name"/>
+      <schemaTargets xmi:id="_PNP8I03PEfCMKN9zNA7WDQ" RelativeXPathQuery="region" TagName="region"/>
+      <schemaTargets xmi:id="_PNP8JE3PEfCMKN9zNA7WDQ" RelativeXPathQuery="country" TagName="country"/>
+      <schemaTargets xmi:id="_PNP8JU3PEfCMKN9zNA7WDQ" RelativeXPathQuery="lat" TagName="lat"/>
+      <schemaTargets xmi:id="_PNP8Jk3PEfCMKN9zNA7WDQ" RelativeXPathQuery="lon" TagName="lon"/>
+      <schemaTargets xmi:id="_PNP8J03PEfCMKN9zNA7WDQ" RelativeXPathQuery="tz_id" TagName="tz_id"/>
+      <schemaTargets xmi:id="_PNP8KE3PEfCMKN9zNA7WDQ" RelativeXPathQuery="localtime_epoch" TagName="localtime_epoch"/>
+      <schemaTargets xmi:id="_PNP8KU3PEfCMKN9zNA7WDQ" RelativeXPathQuery="localtime" TagName="localtime"/>
+      <schemaTargets xmi:id="_PNP8Kk3PEfCMKN9zNA7WDQ" RelativeXPathQuery="$.current.last_updated_epoch" TagName="last_updated_epoch"/>
+      <schemaTargets xmi:id="_PNP8K03PEfCMKN9zNA7WDQ" RelativeXPathQuery="$.current.last_updated" TagName="last_updated"/>
+      <schemaTargets xmi:id="_PNP8LE3PEfCMKN9zNA7WDQ" RelativeXPathQuery="$.current.temp_c" TagName="temp_c"/>
+      <schemaTargets xmi:id="_PNP8LU3PEfCMKN9zNA7WDQ" RelativeXPathQuery="$.current.temp_f" TagName="temp_f"/>
+      <schemaTargets xmi:id="_PNP8Lk3PEfCMKN9zNA7WDQ" RelativeXPathQuery="$.current.is_day" TagName="is_day"/>
+      <schemaTargets xmi:id="_PNP8L03PEfCMKN9zNA7WDQ" RelativeXPathQuery="$.current.condition" TagName="condition"/>
+      <schemaTargets xmi:id="_PNP8ME3PEfCMKN9zNA7WDQ" RelativeXPathQuery="$.current.wind_mph" TagName="wind_mph"/>
+      <schemaTargets xmi:id="_PNP8MU3PEfCMKN9zNA7WDQ" RelativeXPathQuery="$.current.wind_kph" TagName="wind_kph"/>
+      <schemaTargets xmi:id="_PNP8Mk3PEfCMKN9zNA7WDQ" RelativeXPathQuery="$.current.wind_degree" TagName="wind_degree"/>
+      <schemaTargets xmi:id="_PNP8M03PEfCMKN9zNA7WDQ" RelativeXPathQuery="$.current.wind_dir" TagName="wind_dir"/>
+      <schemaTargets xmi:id="_PNP8NE3PEfCMKN9zNA7WDQ" RelativeXPathQuery="$.current.pressure_mb" TagName="pressure_mb"/>
+      <schemaTargets xmi:id="_PNP8NU3PEfCMKN9zNA7WDQ" RelativeXPathQuery="$.current.pressure_in" TagName="pressure_in"/>
+      <schemaTargets xmi:id="_PNP8Nk3PEfCMKN9zNA7WDQ" RelativeXPathQuery="$.current.precip_mm" TagName="precip_mm"/>
+      <schemaTargets xmi:id="_PNP8N03PEfCMKN9zNA7WDQ" RelativeXPathQuery="$.current.precip_in" TagName="precip_in"/>
+      <schemaTargets xmi:id="_PNP8OE3PEfCMKN9zNA7WDQ" RelativeXPathQuery="$.current.humidity" TagName="humidity"/>
+      <schemaTargets xmi:id="_PNP8OU3PEfCMKN9zNA7WDQ" RelativeXPathQuery="$.current.cloud" TagName="cloud"/>
+      <schemaTargets xmi:id="_PNP8Ok3PEfCMKN9zNA7WDQ" RelativeXPathQuery="$.current.feelslike_c" TagName="feelslike_c"/>
+      <schemaTargets xmi:id="_PNP8O03PEfCMKN9zNA7WDQ" RelativeXPathQuery="$.current.feelslike_f" TagName="feelslike_f"/>
+      <schemaTargets xmi:id="_PNP8PE3PEfCMKN9zNA7WDQ" RelativeXPathQuery="$.current.windchill_c" TagName="windchill_c"/>
+      <schemaTargets xmi:id="_PNP8PU3PEfCMKN9zNA7WDQ" RelativeXPathQuery="$.current.windchill_f" TagName="windchill_f"/>
+      <schemaTargets xmi:id="_PNP8Pk3PEfCMKN9zNA7WDQ" RelativeXPathQuery="$.current.heatindex_c" TagName="heatindex_c"/>
+      <schemaTargets xmi:id="_PNP8P03PEfCMKN9zNA7WDQ" RelativeXPathQuery="$.current.heatindex_f" TagName="heatindex_f"/>
+      <schemaTargets xmi:id="_PNP8QE3PEfCMKN9zNA7WDQ" RelativeXPathQuery="$.current.dewpoint_c" TagName="dewpoint_c"/>
+      <schemaTargets xmi:id="_PNP8QU3PEfCMKN9zNA7WDQ" RelativeXPathQuery="$.current.dewpoint_f" TagName="dewpoint_f"/>
+      <schemaTargets xmi:id="_PNP8Qk3PEfCMKN9zNA7WDQ" RelativeXPathQuery="$.current.vis_km" TagName="vis_km"/>
+      <schemaTargets xmi:id="_PNP8Q03PEfCMKN9zNA7WDQ" RelativeXPathQuery="$.current.vis_miles" TagName="vis_miles"/>
+      <schemaTargets xmi:id="_PNP8RE3PEfCMKN9zNA7WDQ" RelativeXPathQuery="$.current.uv" TagName="uv"/>
+      <schemaTargets xmi:id="_PNP8RU3PEfCMKN9zNA7WDQ" RelativeXPathQuery="$.current.gust_mph" TagName="gust_mph"/>
+      <schemaTargets xmi:id="_PNP8Rk3PEfCMKN9zNA7WDQ" RelativeXPathQuery="$.current.gust_kph" TagName="gust_kph"/>
+    </schema>
+  </TalendJSON:JSONFileConnection>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_PNP8R03PEfCMKN9zNA7WDQ" name="default" dataManager="_PNP8IE3PEfCMKN9zNA7WDQ">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_PNP8SE3PEfCMKN9zNA7WDQ" id="_9TUtME3OEfCMKN9zNA7WDQ" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_PNP8SU3PEfCMKN9zNA7WDQ" label="name" length="9" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_PNP8Sk3PEfCMKN9zNA7WDQ" label="region" length="9" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_PNP8S03PEfCMKN9zNA7WDQ" label="country" length="5" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_PNP8TE3PEfCMKN9zNA7WDQ" label="lat" length="7" precision="5" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_PNP8TU3PEfCMKN9zNA7WDQ" label="lon" length="7" precision="5" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_PNP8Tk3PEfCMKN9zNA7WDQ" label="tz_id" length="12" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_PNP8T03PEfCMKN9zNA7WDQ" label="localtime_epoch" length="10" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_PNP8UE3PEfCMKN9zNA7WDQ" label="localtime" length="16" talendType="id_Date" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_PNP8UU3PEfCMKN9zNA7WDQ" label="last_updated_epoch" length="10" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_PNP8Uk3PEfCMKN9zNA7WDQ" label="last_updated" length="16" talendType="id_Date" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_PNP8U03PEfCMKN9zNA7WDQ" label="temp_c" length="4" precision="2" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_PNP8VE3PEfCMKN9zNA7WDQ" label="temp_f" length="4" precision="2" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_PNP8VU3PEfCMKN9zNA7WDQ" label="is_day" length="1" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_PNP8Vk3PEfCMKN9zNA7WDQ" label="condition" length="84" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_PNP8V03PEfCMKN9zNA7WDQ" label="wind_mph" length="4" precision="2" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_PNP8WE3PEfCMKN9zNA7WDQ" label="wind_kph" length="4" precision="2" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_PNP8WU3PEfCMKN9zNA7WDQ" label="wind_degree" length="3" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_PNP8Wk3PEfCMKN9zNA7WDQ" label="wind_dir" length="1" talendType="id_Character" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_PNP8W03PEfCMKN9zNA7WDQ" label="pressure_mb" length="6" precision="2" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_PNP8XE3PEfCMKN9zNA7WDQ" label="pressure_in" length="5" precision="3" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_PNP8XU3PEfCMKN9zNA7WDQ" label="precip_mm" length="3" precision="2" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_PNP8Xk3PEfCMKN9zNA7WDQ" label="precip_in" length="3" precision="2" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_PNP8X03PEfCMKN9zNA7WDQ" label="humidity" length="2" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_PNP8YE3PEfCMKN9zNA7WDQ" label="cloud" length="2" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_PNP8YU3PEfCMKN9zNA7WDQ" label="feelslike_c" length="4" precision="2" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_PNP8Yk3PEfCMKN9zNA7WDQ" label="feelslike_f" length="4" precision="2" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_PNP8Y03PEfCMKN9zNA7WDQ" label="windchill_c" length="4" precision="2" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_PNP8ZE3PEfCMKN9zNA7WDQ" label="windchill_f" length="4" precision="2" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_PNP8ZU3PEfCMKN9zNA7WDQ" label="heatindex_c" length="4" precision="2" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_PNP8Zk3PEfCMKN9zNA7WDQ" label="heatindex_f" length="4" precision="2" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_PNP8Z03PEfCMKN9zNA7WDQ" label="dewpoint_c" length="4" precision="2" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_PNP8aE3PEfCMKN9zNA7WDQ" label="dewpoint_f" length="4" precision="2" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_PNP8aU3PEfCMKN9zNA7WDQ" label="vis_km" length="3" precision="2" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_PNP8ak3PEfCMKN9zNA7WDQ" label="vis_miles" length="3" precision="2" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_PNP8a03PEfCMKN9zNA7WDQ" label="uv" length="3" precision="2" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_PNP8bE3PEfCMKN9zNA7WDQ" label="gust_mph" length="4" precision="2" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_PNP8bU3PEfCMKN9zNA7WDQ" label="gust_kph" length="4" precision="2" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>
