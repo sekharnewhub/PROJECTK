@@ -15,6 +15,25 @@
   } ]
 }, {
   "baseItem" : {
+    "id" : "_72eOUFA3EfC2e_YMBaBnGw",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_nq5kgE3UEfCMKN9zNA7WDQ",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_uc_Z0FA5EfC2e_YMBaBnGw",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_nq5kgE3UEfCMKN9zNA7WDQ - campaign_data",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
     "id" : "_dI2i8EzgEfCaX9OSdbjRaA",
     "version" : "0.1",
     "type" : "job"
